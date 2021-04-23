@@ -1,0 +1,23 @@
+{
+  "name": "fetfinalgroupproject",
+  "version": "1.0.0",
+  "description": "Luis Chavez, Robbie Minor, Irene Buck",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/irenebuck/FETFinalGroupProject.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/irenebuck/FETFinalGroupProject/issues"
+  },
+  "homepage": "https://github.com/irenebuck/FETFinalGroupProject#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0"
+  }
+}
