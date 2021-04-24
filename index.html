@@ -8,43 +8,38 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 
-<body>
-    <div class="container border border-dark">
-        <div class="jumbotron bg-dark text-center text-white">
-            <h1>CRUD - Assign Employees To A Team</h1>
-            <p class>This project was created by Luis Chavez, Robbie Minor, and Irene Buck</p>
-          </div>
-    </div>
 
+<body class="container">
     <div class="container">
-        <div class="row py-3 border border-dark">
-            <input type="text" class="w-100 m-2 text-center" placeholder="Enter Manager's Name">
-            <button id="mgrBtn" type="button" class="btn btn-primary btn-block m-2">Create Manager's Team</button>
+        <div class="jumbotron bg-dark text-white">
+          <h1 class="display-3 text-center">CRUD - Team</h1>
+          <p class="lead text-center">This project was created by Luis Chavez, Robbie Minor, and Irene Buck</p>
         </div>
     </div>
-
-    <div id="app" class="container border border-dark">
-        <div class="row pt-3">
-            <table class="table text-center">
-                <thead class="thead-dark">
-                  <tr>
-                    <th>First Name</th>
-                    <th>Last Name</th>
-                    <th>Email</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="newTeam"> Enter Team Name</label>
+                        <input type="text" class="form-control" id="newTeam">
+                    </div>
+                </div>
+            </div>    
+            <button type="button" id="addBtn" class="btn btn-dark">Add Team</button>       
         </div>
     </div>
-
-
+    <br>
+    <div class="card">
+        <table id="myTable" class="table">
+            <tr class="bg-success-50">
+                <th>Team Name</th>
+                <th>Update</th>
+                <th>Delete</th>
+            </tr>
+        </table>
+    </div> 
+    
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="index.js"></script>
