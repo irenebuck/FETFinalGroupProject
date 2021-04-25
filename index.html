@@ -4,44 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chavez, Minor, & Buck</title>
+    <title>Chavez, Minor, and Buck App</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body class="container">
-    <div class="container">
-        <div class="jumbotron bg-dark text-white">
-          <h1 class="display-3 text-center">CRUD - Team</h1>
-          <p class="lead text-center">This project was created by Luis Chavez, Robbie Minor, and Irene Buck</p>
-        </div>
+    <div id="new-cust" class="jumbotron">
+        <h2>CRUD Group Project</h2>
+        <input type="text" id="new-cust-name" class="form-control"> <br>
+        <button id="create-new-cust" class="btn btn-primary form-control">Create Customer</button>
     </div>
-    <div class="card">
-        <div class="card-body">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="form-group">
-                        <label for="newTeam"> Enter Team Name</label>
-                        <input type="text" class="form-control" id="newTeam">
-                    </div>
-                </div>
-            </div>    
-            <button type="button" id="addBtn" class="btn btn-dark">Add Team</button>       
-        </div>
-    </div>
-    <br>
-    <div class="card">
-        <table id="myTable" class="table">
-            <tr class="bg-success-50">
-                <th>Team Name</th>
-                <th>Update</th>
-                <th>Delete</th>
-            </tr>
-        </table>
-    </div> 
     
+    <div id="app">
+    </div>
+
     <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="index.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
